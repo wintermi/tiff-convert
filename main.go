@@ -30,7 +30,7 @@ Copyright 2021, Matthew Winter
 
 tiff-convert recursively walks the input path searching for all TIFF files and
 exporting each page of these TIFF files to the output path as an image file
-using the image encoder stated. 
+using the image encoder stated.
 
 Use --help for more details.
 
@@ -120,7 +120,11 @@ func convertToPNG(w io.Writer, inputPath string, outputPath string, relativePath
 
 		dstFile, _ := filepath.Abs(filepath.Join(outputPath, relativeOutputFile))
 		if _, err := os.Stat(dstFile); os.IsNotExist(err) {
-			os.MkdirAll(filepath.Dir(dstFile), 0700)
+			err = os.MkdirAll(filepath.Dir(dstFile), 0700)
+			if err != nil {
+				fmt.Fprintln(w, "Error [os.MkdirAll]:", err)
+				return
+			}
 		}
 
 		f, err := os.Create(dstFile)
