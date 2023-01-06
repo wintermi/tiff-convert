@@ -26,7 +26,7 @@ import (
 )
 
 var helpText = `%s 0.1.0
-Copyright 2021, Matthew Winter
+Copyright 2021-2023, Matthew Winter
 
 tiff-convert recursively walks the input path searching for all TIFF files and
 exporting each page of these TIFF files to the output path as an image file
