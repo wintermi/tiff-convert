@@ -1,11 +1,13 @@
 # TIFF Converter
-[![Go Workflow Status](https://github.com/wintermi/tiff-convert/workflows/Go/badge.svg)](https://github.com/wintermi/tiff-convert/actions/workflows/go.yml)
-[![Go Report Card](https://goreportcard.com/badge/github.com/wintermi/tiff-convert)](https://goreportcard.com/report/github.com/wintermi/tiff-convert)
-[![license](https://img.shields.io/github/license/wintermi/tiff-convert.svg)](https://github.com/wintermi/tiff-convert/blob/main/LICENSE)
-[![GitHub release (latest by date including pre-releases)](https://img.shields.io/github/v/release/wintermi/tiff-convert?include_prereleases)](https://github.com/wintermi/tiff-convert/releases)
+
+[![Workflows](https://github.com/wintermi/tiff-convert/workflows/Go/badge.svg)](https://github.com/wintermi/tiff-convert/actions/workflows/go.yml)
+[![Go Report](https://goreportcard.com/badge/github.com/wintermi/tiff-convert)](https://goreportcard.com/report/github.com/wintermi/tiff-convert)
+[![License](https://img.shields.io/github/license/wintermi/tiff-convert.svg)](https://github.com/wintermi/tiff-convert/blob/main/LICENSE)
+[![Release](https://img.shields.io/github/v/release/wintermi/tiff-convert?include_prereleases)](https://github.com/wintermi/tiff-convert/releases)
 
 
 ## Description
+
 "tiff-convert" recursively walks the input path searching for all TIFF files and exporting each page of these TIFF files to the output path as an image file using the image encoder stated.
 
 ```
@@ -22,8 +24,10 @@ ARGS:
 ```
 
 ## Known Limitations
+
 The current version only exports the pages using the PNG Encoder.  Additional formats will be added in a future release.
 
 
 ## License
+
 **tiff-convert** is released under the [Apache License 2.0](https://github.com/wintermi/tiff-convert/blob/main/LICENSE) unless explicitly mentioned in the file header.
