@@ -1,0 +1,7 @@
+# .goreleaser.yaml
+builds:
+  - id: "lzh-test"
+    goos:
+      - linux
+    goarch:
+      - amd64
