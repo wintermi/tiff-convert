@@ -1,6 +1,6 @@
 # TIFF Converter
 
-[![Workflows](https://github.com/wintermi/tiff-convert/workflows/Go/badge.svg)](https://github.com/wintermi/tiff-convert/actions/workflows/go.yml)
+[![Workflows](https://github.com/wintermi/tiff-convert/workflows/Go/badge.svg)](https://github.com/wintermi/tiff-convert/actions)
 [![Go Report](https://goreportcard.com/badge/github.com/wintermi/tiff-convert)](https://goreportcard.com/report/github.com/wintermi/tiff-convert)
 [![License](https://img.shields.io/github/license/wintermi/tiff-convert.svg)](https://github.com/wintermi/tiff-convert/blob/main/LICENSE)
 [![Release](https://img.shields.io/github/v/release/wintermi/tiff-convert?include_prereleases)](https://github.com/wintermi/tiff-convert/releases)

@@ -1,6 +1,15 @@
-name: Go
+name: Go - Development Build
 
-on: [push]
+on:
+  pull_request:
+  push:
+    branches:
+      - main
+
+concurrency:
+  # Cancels pending runs when a PR gets updated.
+  group: ${{ github.head_ref || github.run_id }}-${{ github.actor }}
+  cancel-in-progress: true
 
 jobs:
   build:
@@ -9,8 +18,8 @@ jobs:
     strategy:
       matrix:
         go-version:
-          - 1.20.7
-          - 1.21.0
+          - 1.20.8
+          - 1.21.1
 
     steps:
       - uses: actions/checkout@v3.5.3
@@ -39,8 +48,7 @@ jobs:
       - name: Setup Go
         uses: actions/setup-go@v4.0.1
         with:
-          go-version: 1.20.7
-
+          go-version: 1.20.8
       - name: Run golangci-lint
         uses: golangci/golangci-lint-action@v3.6.0
         with:

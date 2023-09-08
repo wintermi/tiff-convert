@@ -25,7 +25,7 @@ import (
 	"github.com/andviro/go-libtiff/libtiff"
 )
 
-var helpText = `%s 0.1.0
+var helpText = `%s 0.1.1
 Copyright 2021-2023, Matthew Winter
 
 tiff-convert recursively walks the input path searching for all TIFF files and
