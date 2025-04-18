@@ -28,7 +28,7 @@ jobs:
       - name: Install Package
         uses: ConorMacBride/install-package@v1.1.0
         with:
-          apt: zlib1g-dev libpng1.2-dev libtiff5-dev
+          apt: zlib libpng tiff
 
       - name: Setup Go ${{ matrix.go-version }}
         uses: actions/setup-go@v5.3.0
