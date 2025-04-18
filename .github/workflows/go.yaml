@@ -26,9 +26,7 @@ jobs:
           fetch-depth: 0
 
       - name: Install Package
-        uses: ConorMacBride/install-package@v1.1.0
-        with:
-          apt: zlib libpng tiff
+        run: sudo apt update && sudo apt-get install -y zlib libpng tiff
 
       - name: Setup Go ${{ matrix.go-version }}
         uses: actions/setup-go@v5.3.0
